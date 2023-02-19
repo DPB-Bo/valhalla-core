@@ -1,0 +1,18 @@
+package com.valhallacore.dto.paypal;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class PurchaseUnit {
+    private List<Item> items;
+    private AmountWithBreakDown amount;
+    private Payee payee;
+}

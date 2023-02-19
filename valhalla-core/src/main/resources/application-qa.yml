@@ -1,0 +1,23 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/valhalla_db_qa
+    username: root
+    password: Admin123!@#$%^
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+paypal:
+  mode: sandbox
+  client:
+    id: AW6oKok-6RrDQmomgxeIRyJTIks5iUWS4ZjDZL1jjx3dWIBUTzZiY-i93A6hAh2SpwVJjN45-KHCSf7S
+    secret: EP0KRzhR39Q0nZYYn_IvdABXkuUNLpaYtOvePHq4aWKTSA0ck5lpK4-lQXK3Q0gV-FQUQcHh5SDUb-Di
+  urls:
+    cancel: http://149.28.156.104:8888/payment/cancel
+    success: http://149.28.156.104:8888/payment/success
+    createOrder: https://api-m.sandbox.paypal.com/v2/checkout/orders
