@@ -11,7 +11,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 public class SystemUser {
-    private Long uuid;
+    private Long id;
     private String username;
     private UserType userType;
     private String fullName;

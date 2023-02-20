@@ -11,8 +11,7 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Customer extends SystemUser{
+public class Customer extends SystemUser {
     private Date joinedDay;
     private Double point;
-
 }
